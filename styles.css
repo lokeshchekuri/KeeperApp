@@ -1,0 +1,155 @@
+/* Reset and global styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #f7f7f7; /* Lighter background color */
+  padding: 0 20px; /* Increased padding for better spacing */
+}
+
+/* Header styles */
+header {
+  background-color: #f5ba13;
+  padding: 16px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center; /* Center align header content */
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 300; /* Slightly increased font weight */
+}
+
+/* Footer styles */
+footer {
+  position: fixed; /* Fixed position to stay at the bottom */
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  background-color: #f5ba13; /* Footer background color */
+  padding: 10px 0; /* Increased padding */
+  box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.1); /* Inset shadow */
+}
+
+footer p {
+  color: #fff; /* Light text color */
+}
+
+/* Note styles */
+.note {
+  background: #fff;
+  border-radius: 10px; /* Slightly increased border radius */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 20px; /* Increased padding */
+  width: 100%; /* Full width */
+  margin: 20px auto; /* Center align */
+}
+
+.note h1 {
+  font-size: 1.2em; /* Increased font size */
+  margin-bottom: 10px; /* Increased margin */
+}
+
+.note p {
+  font-size: 1em; /* Adjusted font size */
+  margin-bottom: 15px; /* Increased margin */
+}
+
+.note button {
+  color: #fff; /* Button text color */
+  background-color: #f5ba13; /* Button background color */
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.note button:hover {
+  background-color: #d69e0e; /* Darker hover color */
+}
+
+/* Form styles */
+form {
+  max-width: 600px; /* Increased max-width for larger screens */
+  margin: 50px auto; /* Center align */
+  padding: 30px; /* Increased padding */
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: 1px solid #ccc; /* Light border */
+  padding: 10px;
+  margin-bottom: 20px; /* Increased margin */
+  font-size: 1em; /* Adjusted font size */
+  font-family: inherit;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px; /* Increased padding */
+  font-size: 1em; /* Adjusted font size */
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+form button:hover {
+  background-color: #d69e0e; /* Darker hover color */
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 12px 20px; /* Adjusted padding */
+  }
+  header h1 {
+    font-size: 1.8em; /* Adjusted font size */
+  }
+  footer {
+    padding: 8px 0; /* Adjusted padding */
+  }
+  footer p {
+    font-size: 0.9em; /* Adjusted font size */
+  }
+  .note {
+    width: calc(100% - 40px); /* Adjusted width */
+    margin: 20px auto; /* Center align */
+  }
+  .note h1 {
+    font-size: 1.1em; /* Adjusted font size */
+  }
+  .note p {
+    font-size: 1em; /* Adjusted font size */
+  }
+  form {
+    padding: 20px; /* Adjusted padding */
+  }
+  form input,
+  form textarea {
+    padding: 8px; /* Adjusted padding */
+    font-size: 0.9em; /* Adjusted font size */
+  }
+  form button {
+    padding: 8px 16px; /* Adjusted padding */
+    font-size: 0.9em; /* Adjusted font size */
+  }
+}
